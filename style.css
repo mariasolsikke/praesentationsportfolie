@@ -12,6 +12,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  width: 30%;
 }
 /* styler links inden i navigation bar */
 
@@ -29,3 +30,25 @@
 
 }
 /* tilføjer en farve til det aktive link */
+
+.topnav .icon {
+  display: none;
+}
+/* skjuler linket som skal åben og lukke i topnav på små skærme*/
+.texta: {
+  color: black;
+  text-align: center;
+  
+
+
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #EECBD3;
+  color: white;
+  text-align: center;
+}
