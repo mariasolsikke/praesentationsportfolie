@@ -38,11 +38,32 @@
 .texta: {
   color: black;
   text-align: center;
-  
+
+
+
+}
+.skifttype {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.brodtekst {
+    font-family: "Hiragino Sans";
 
 
 }
 
+.minekompetencer {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
+
+}
+.ommig {
+  font-family:'Open Sans', sans-serif;
+  text-align: center;
+
+}
 .footer {
   position: fixed;
   left: 0;
