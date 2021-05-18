@@ -1,3 +1,12 @@
+
+.logo {
+  position:fixed;
+  	top:0;
+  	left:0;
+    padding: 5px;
+
+}
+
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -45,23 +54,27 @@
 .skifttype {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  font-size: 30px;
 }
 
 .brodtekst {
     font-family: "Hiragino Sans";
-
+    font-size: 15px;
+    text-align: center;
 
 }
 
 .minekompetencer {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    font-size: 30px;
 
 
 }
 .ommig {
   font-family:'Open Sans', sans-serif;
   text-align: center;
+  font-size: 30px;
 
 }
 .footer {
