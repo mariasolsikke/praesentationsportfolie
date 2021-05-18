@@ -25,7 +25,9 @@ padding: 0px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
+  font-family: "Open sans";
+  font-weight: 300;
   width: 30%;
 }
 /* styler links inden i navigation bar */
@@ -63,9 +65,13 @@ padding: 0px;
 }
 
 .brodtekst {
-    font-family: "Hiragino Sans";
+    font-family: "Open sans";
     font-size: 15px;
+    font-weight: 300;
     text-align: center;
+    border-radius: 30px;
+    margin-left: 75px;
+    margin-right: 75px;
 
 }
 
@@ -73,7 +79,7 @@ padding: 0px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 30px;
-    margin-top: 180px;
+    margin-top: 140px;
     margin-bottom: 50px;
 
 
@@ -85,17 +91,9 @@ padding: 0px;
   margin-top: 180px;
   margin-bottom: 50px;
 
+
 }
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  width: 100%;
-  background-color: #EECBD3;
-  color: white;
-  text-align: center;
-}
+
 .kompetencer {
   width: 100%;
   display: flex;
@@ -121,4 +119,36 @@ padding: 0px;
   font-family: "Open Sans";
   font-weight: 300;
   font-size: 15px;
+}
+
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 35px 615px 35px 615px;
+  background-position: right;
+  overflow: hidden;
+
+
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  background-color: #EECBD3;
+  color: white;
+  text-align: center;
 }
