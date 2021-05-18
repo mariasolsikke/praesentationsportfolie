@@ -1,10 +1,15 @@
-
+* {
+margin: 0px;
+padding: 0px;
+}
 .logo {
-  position:fixed;
-  	top:0;
-  	left:0;
-    padding: 5px;
 
+    padding: 5px;
+    font-size: 15px;
+    font-family:"Open Sans";
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .topnav {
@@ -68,6 +73,8 @@
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 30px;
+    margin-top: 180px;
+    margin-bottom: 50px;
 
 
 }
@@ -75,14 +82,43 @@
   font-family:'Open Sans', sans-serif;
   text-align: center;
   font-size: 30px;
+  margin-top: 180px;
+  margin-bottom: 50px;
 
 }
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
   width: 100%;
   background-color: #EECBD3;
   color: white;
   text-align: center;
+}
+.kompetencer {
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+}
+.kompetencebox{
+  background-color: #EADBDB;
+  border: 1px solid #707070;
+  width: 250px;
+  height: 350px;
+  padding: 16px;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+.kompetencebox h3 {
+  font-family:"Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.kompetencebox p {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 15px;
 }
