@@ -2,15 +2,27 @@
 margin: 0px;
 padding: 0px;
 }
-.logo {
 
-    padding: 5px;
-    font-size: 15px;
-    font-family:"Open Sans";
-    height: 50px;
-    display: flex;
-    align-items: flex-start;
+body {
+background-color: white;
+
 }
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: white;
+  }
+}
+
+.logo {
+  padding: 5px;
+  font-size: 15px;
+  font-family:"Open Sans";
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+/* tilføjer logo */
 
 .topnav {
   background-color: #333;
@@ -65,22 +77,23 @@ padding: 0px;
 }
 
 .brodtekst {
-    font-family: "Open sans";
-    font-size: 15px;
-    font-weight: 300;
-    text-align: center;
-    border-radius: 30px;
-    margin-left: 75px;
-    margin-right: 75px;
+  font-family: "Open sans";
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 30px;
+  margin-left: 75px;
+  margin-right: 75px;
 
 }
 
 .minekompetencer {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 140px;
-    margin-bottom: 50px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 140px;
+  margin-bottom: 50px;
 
 
 }
@@ -90,6 +103,7 @@ padding: 0px;
   font-size: 30px;
   margin-top: 180px;
   margin-bottom: 50px;
+  font-weight: 300;
 
 
 }
@@ -122,7 +136,52 @@ padding: 0px;
 }
 
 
+
+.billedraekke {
+display: flex;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+margin-top: 30px;
+border: 25px;
+}
+
+.column {
+width: ;
+padding: 10px;
+margin: 106px;
+align-self: center;
+}
+
 .btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-around;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  width: 200px;
+  }
+
+.fotografi {
+  font-family:'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 180px;
+  margin-bottom: 50px;
+  font-weight: 300;
+
+
+
+  }
+.semere1{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,10 +194,68 @@ padding: 0px;
   color: white;
   border-radius: 30px;
   padding: 10px;
-  margin: 35px 615px 35px 615px;
-  background-position: right;
-  overflow: hidden;
+  width: 200px;
+}
 
+
+}
+
+.mockup {
+  font-family:'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 180px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+.mockup1 img {
+  width: 600px;
+  height: 250px;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.galleri1 {
+  width: 500px;
+  height: 500px;
+  gap: 0px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0fr 1fr 1fr;
+  grid-template-areas:
+  ".       ."
+  "billed2 billed1"
+  "billed3 billed1"
+  ;
+
+}
+
+
+.billed2 {
+  grid-area: billed2;
+  background-color: white;
+  height: 200px;
+
+
+}
+
+.billed3 {
+grid-area: billed3;
+background-color: white;
+height: 400px;
+
+}
+
+
+.billed1 {
+  grid-area: billed1;
+  height: 1100px;
+  background-color: white;
+  margin-left: 10px;
+}
+}
 
 }
 
