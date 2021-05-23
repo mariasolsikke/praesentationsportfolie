@@ -35,7 +35,11 @@ background-color: white;
   align-items:left;
 }
 /* tilføjer logo */
-
+.headerbillede img {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+}
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -361,7 +365,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* Når man kører mussen over "submit" knappen og tilføjer en mørkere ?  */
+/* Når man kører mussen over "submit" knappen og tilføjer en mørkere farve  */
 input[type=submit]:hover {
   background-color: #EECBD3;
 }
@@ -371,6 +375,138 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: lightgray;
   padding: 20px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 9px 0px;
+  grid-template-areas:
+    "pic1 pic1 pic pic"
+    "pic2 pic2 pic pic"
+    "pic3 pic3 pic4 pic4"
+    "pic3 pic3 pic5 pic5"
+    "pic3 pic3 pic5 pic5";
+}
+.grid-container img {
+  width: 100% ;
+  margin: 10px;
+
+}
+.pic { grid-area: pic; }
+.pic1 { grid-area: pic1; }
+.pic2 { grid-area: pic2; }
+.pic3 { grid-area: pic3; }
+.pic4 { grid-area: pic4; }
+.pic5 { grid-area: pic5; }
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 9px 0px;
+  grid-template-areas:
+    "area1 area1 area2 area2 ."
+    "area1 area1 area2 area2 ."
+    "area3 area3 area2 area2 ."
+    "area3 area3 area4 area4 ."
+    "area5 area5 . . ."
+    "area5 area5 . . ."
+    ". . . . .";
+}
+.area1 { grid-area: area1; }
+.area2 { grid-area: area2; }
+.area3 { grid-area: area3; }
+.area4 { grid-area: area4; }
+.area5 { grid-area: area5; }
+
+.grid-container1 img {
+  width: 100%;
+  height: 100%;
+  content: close-quote;
+}
+
+.grid-container2 img {
+  width: 100%;
+  height: 100%;
+
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.1fr 1fr 1.1fr 0.9fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    ". ill1 ill1 ill1 ill3 ill3 ."
+    ". ill1 ill1 ill1 ill3 ill3 ."
+    ". ill4 ill4 . . ill2 ."
+    ". ill4 ill4 . . ill2 ."
+    ". ill5 ill5 . ill6 ill6 ."
+    ". ill5 ill5 . ill6 ill6 ."
+    ". ill7 ill7 . ill8 ill8 ."
+    ". . . . . . .";
+}
+
+.ill1 { grid-area: ill1; }
+
+.ill2 { grid-area: ill2; }
+
+.ill3 { grid-area: ill3; }
+
+.ill4 { grid-area: ill4; }
+
+.ill5 { grid-area: ill5; }
+
+.ill6 { grid-area: ill6; }
+
+.ill7 { grid-area: ill7; }
+
+.ill8 { grid-area: ill8; }
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px 0px;
+  grid-template-areas:
+    ". mockup1 mockup1 ."
+    ". mockup2 mockup2 ."
+    ". mockup3 mockup3 ."
+    ". mockup4 mockup4 ."
+    ". . . ."
+    ". . . .";
+}
+.mockup1 { grid-area: mockup1; }
+.mockup2 { grid-area: mockup2; }
+.mockup3 { grid-area: mockup3; }
+.mockup4 { grid-area: mockup4; }
+
+.grid-container3 img{
+width: 100%;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px 0px;
+  grid-template-areas:
+    ". sm1 sm1 ."
+    ". sm2 sm2 ."
+    ". sm3 sm3 ."
+    ". sm4 sm4 ."
+    ". . . ."
+    ". . . .";
+}
+.sm1 { grid-area: sm1; }
+.sm2 { grid-area: sm2; }
+.sm3 { grid-area: sm3; }
+.sm4 { grid-area: sm4; }
+
+.grid-container4 img{
+  width: 100% ;
 }
 
 .footer {
