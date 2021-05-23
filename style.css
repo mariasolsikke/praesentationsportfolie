@@ -6,6 +6,7 @@ padding: 0px;
 body {
 background-color: white;
 
+
 }
 
 @media screen and (min-width: 480px) {
@@ -14,13 +15,24 @@ background-color: white;
   }
 }
 
-.logo {
+.logo p {
   padding: 5px;
   font-size: 15px;
   font-family:"Open Sans";
   height: 50px;
   display: flex;
   align-items: flex-start;
+  float: right;
+  margin-right:10px;
+  margin-bottom:10px;
+  margin-top:0px
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  align-items:left;
 }
 /* tilføjer logo */
 
@@ -136,7 +148,6 @@ background-color: white;
 }
 
 
-
 .billedraekke {
 display: flex;
 justify-content: space-around;
@@ -154,7 +165,7 @@ align-self: center;
 }
 
 .btn {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
@@ -168,25 +179,74 @@ align-self: center;
   border-radius: 30px;
   padding: 10px;
   width: 200px;
+  align-self: center;
   }
-
-.fotografi {
+.tekst-fotografi {
   font-family:'Open Sans', sans-serif;
   text-align: center;
   font-size: 30px;
-  margin-top: 180px;
-  margin-bottom: 50px;
+  margin: 40px;
   font-weight: 300;
+}
+.content-allign {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fotografi {
+  width: 700px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 0fr 0fr;
+  grid-template-areas:
+    ". . . smykke fyr . . ."
+    ". . . pige fyr . . .";
+}
+.fyr {
+  width: 350px;
+  height: 500px;
+  grid-area: fyr;
+  background-color: lime;
+}
+
+.fyr img {
+  width: 100%;
+  height: 100%;
+}
+.smykke {
+  width: 350px;
+  height: 250px;
+  grid-area: smykke;
+  background-color: yellow;
+}
+.smykke img {
+  width: 100%;
+  height: 100%;
+
+}
+.pige {
+  width: 350px;
+  height: 250px;
+  grid-area: pige;
+  background-color: blue;
+}
+.pige img {
+  width: 100%;
+  height: 100%;
+}
 
 
 
-  }
-.semere1{
+.semere {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  justify-content: space-around;
+  justify-content: center;
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 300;
@@ -195,17 +255,26 @@ align-self: center;
   border-radius: 30px;
   padding: 10px;
   width: 200px;
+  align-self: center;
+  margin: 20px;
 }
 
-
+.illustation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 40px;
 }
 
 .mockup {
   font-family:'Open Sans', sans-serif;
   text-align: center;
   font-size: 30px;
-  margin-top: 180px;
-  margin-bottom: 50px;
+  margin: 40px;
   font-weight: 300;
 }
 .mockup1 img {
@@ -214,55 +283,100 @@ align-self: center;
   align-items: center;
   padding: 5px;
   margin: 5px;
+}
+.mereknap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  width: 200px;
+  align-content: center;
+  align-self: center;
+}
+
+.kontakt {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+.kontakt-brodtekst {
+  color: black;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  background-color:
+}
+
+.kontakt-tykskrift {
+  olor: black;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  margin: 40px;
+}
+.projekt label {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Open Sans";
 
 }
 
-.galleri1 {
-  width: 500px;
-  height: 500px;
-  gap: 0px 0px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0fr 1fr 1fr;
-  grid-template-areas:
-  ".       ."
-  "billed2 billed1"
-  "billed3 billed1"
-  ;
-
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; /* Grå border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+  color: black;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
 }
 
 
-.billed2 {
-  grid-area: billed2;
-  background-color: white;
-  height: 200px;
-
-
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.billed3 {
-grid-area: billed3;
-background-color: white;
-height: 400px;
-
+/* Når man kører mussen over "submit" knappen og tilføjer en mørkere ?  */
+input[type=submit]:hover {
+  background-color: #EECBD3;
 }
 
-
-.billed1 {
-  grid-area: billed1;
-  height: 1100px;
-  background-color: white;
-  margin-left: 10px;
-}
-}
-
+/* Tilføjer en baggrundsfarve og noget padding omkring formularen */
+.kontaktformular {
+  border-radius: 5px;
+  background-color: lightgray;
+  padding: 20px;
 }
 
 .footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+  justify-content:center;
   height: 60px;
   width: 100%;
   background-color: #EECBD3;
