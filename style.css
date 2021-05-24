@@ -378,92 +378,11 @@ input[type=submit]:hover {
 }
 
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 9px 0px;
-  grid-template-areas:
-    "pic1 pic1 pic pic"
-    "pic2 pic2 pic pic"
-    "pic3 pic3 pic4 pic4"
-    "pic3 pic3 pic5 pic5"
-    "pic3 pic3 pic5 pic5";
-}
-.grid-container img {
-  width: 100% ;
-  margin: 10px;
 
 }
-.pic { grid-area: pic; }
-.pic1 { grid-area: pic1; }
-.pic2 { grid-area: pic2; }
-.pic3 { grid-area: pic3; }
-.pic4 { grid-area: pic4; }
-.pic5 { grid-area: pic5; }
 
-.grid-container1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 9px 0px;
-  grid-template-areas:
-    "area1 area1 area2 area2 ."
-    "area1 area1 area2 area2 ."
-    "area3 area3 area2 area2 ."
-    "area3 area3 area4 area4 ."
-    "area5 area5 . . ."
-    "area5 area5 . . ."
-    ". . . . .";
-}
-.area1 { grid-area: area1; }
-.area2 { grid-area: area2; }
-.area3 { grid-area: area3; }
-.area4 { grid-area: area4; }
-.area5 { grid-area: area5; }
 
-.grid-container1 img {
-  width: 100%;
-  height: 100%;
-  content: close-quote;
-}
 
-.grid-container2 img {
-  width: 100%;
-  height: 100%;
-
-}
-.grid-container2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.1fr 1fr 1.1fr 0.9fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px 10px;
-  grid-template-areas:
-    ". ill1 ill1 ill1 ill3 ill3 ."
-    ". ill1 ill1 ill1 ill3 ill3 ."
-    ". ill4 ill4 . . ill2 ."
-    ". ill4 ill4 . . ill2 ."
-    ". ill5 ill5 . ill6 ill6 ."
-    ". ill5 ill5 . ill6 ill6 ."
-    ". ill7 ill7 . ill8 ill8 ."
-    ". . . . . . .";
-}
-
-.ill1 { grid-area: ill1; }
-
-.ill2 { grid-area: ill2; }
-
-.ill3 { grid-area: ill3; }
-
-.ill4 { grid-area: ill4; }
-
-.ill5 { grid-area: ill5; }
-
-.ill6 { grid-area: ill6; }
-
-.ill7 { grid-area: ill7; }
-
-.ill8 { grid-area: ill8; }
 
 .grid-container3 {
   display: grid;
@@ -508,6 +427,82 @@ width: 100%;
 .grid-container4 img{
   width: 100% ;
 }
+.grid-container5 img {
+  width: 100%;
+}
+.grid-container5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box3 box2 box2"
+    "box3 box3 box4 box4"
+    "box5 box5 box4 box4"
+    "box6 box6 box7 box7"
+    "box6 box6 box8 box8"
+    "box9 box9 box8 box8"
+    "box10 box10 box11 box11"
+    "box10 box10 box12 box12"
+    "box13 box13 box12 box12"
+    "box14 box14 box15 box15"
+    "box14 box14 box16 box16"
+    "box17 box17 box16 box16"
+    ". . . .";
+}
+.box1 { grid-area: box1; }
+.box2 { grid-area: box2; }
+.box3 { grid-area: box3; }
+.box4 { grid-area: box4; }
+.box5 { grid-area: box5; }
+.box6 { grid-area: box6; }
+.box7 { grid-area: box7; }
+.box8 { grid-area: box8; }
+.box9 { grid-area: box9; }
+.box10 { grid-area: box10; }
+.box11 { grid-area: box11; }
+.box12 { grid-area: box12; }
+.box13 { grid-area: box13; }
+.box14 { grid-area: box14; }
+.box15 { grid-area: box15; }
+.box16 { grid-area: box16; }
+.box17 { grid-area: box17; }
+
+.grid-container6 img {
+  width: 100%;
+}
+.grid-container6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "ill1 ill1 ill2 ill2"
+    "ill3 ill3 ill2 ill2"
+    "ill3 ill3 ill4 ill4"
+    "ill5 ill5 ill4 ill4"
+    "ill6 ill6 ill7 ill7"
+    "ill8 ill8  . ."
+
+}
+.box1 { grid-area: box1; }
+.box2 { grid-area: box2; }
+.box3 { grid-area: box3; }
+.box4 { grid-area: box4; }
+.box5 { grid-area: box5; }
+.box6 { grid-area: box6; }
+.box7 { grid-area: box7; }
+.box8 { grid-area: box8; }
+.box9 { grid-area: box9; }
+.box10 { grid-area: box10; }
+.box11 { grid-area: box11; }
+.box12 { grid-area: box12; }
+.box13 { grid-area: box13; }
+.box14 { grid-area: box14; }
+.box15 { grid-area: box15; }
+.box16 { grid-area: box16; }
+.box17 { grid-area: box17; }
 
 .footer {
   display: flex;
